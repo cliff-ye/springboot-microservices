@@ -1,0 +1,11 @@
+server:
+  port: 5000
+
+spring:
+  cloud:
+    config:
+      name: configserver
+      server:
+        git:
+          uri: https://github.com/cliff-ye/springboot-microservices/tree/main/config-server/src/main
+          search-paths : resources*
